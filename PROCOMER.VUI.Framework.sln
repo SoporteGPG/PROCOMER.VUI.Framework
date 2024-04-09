@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26228.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROCOMER.VUI.Conexion", "PROCOMER.VUI.Conexion\PROCOMER.VUI.Conexion.csproj", "{694D1637-FB38-4894-9997-7A043A775475}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenServices", "TokenServices\TokenServices.csproj", "{59A9CE7A-3620-4C12-8FEC-ACBA3922F4A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROCOMER.VUI.Token", "TokenServices\PROCOMER.VUI.Token.csproj", "{59A9CE7A-3620-4C12-8FEC-ACBA3922F4A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
