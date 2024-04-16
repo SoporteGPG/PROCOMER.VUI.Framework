@@ -11,7 +11,7 @@ namespace PROCOMER.VUI.Conexion
 
         public cls_Conexion()
         {
-            this.connectionString = ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString;
+            this.connectionString = ConfigurationManager.ConnectionStrings["Cadena"].ConnectionString;
             conexion = new SqlConnection(connectionString);
         }
 

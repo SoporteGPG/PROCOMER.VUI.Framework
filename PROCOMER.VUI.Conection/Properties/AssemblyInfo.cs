@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PROCOMER.VUI.Connection")]
+[assembly: AssemblyTitle("PROCOMER.VUI.Conection")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PROCOMER.VUI.Connection")]
+[assembly: AssemblyProduct("PROCOMER.VUI.Conection")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("89dc47af-85c3-410a-acbc-6ecccc259973")]
+[assembly: Guid("82f530df-4e37-4dad-96fc-e1fd239d6dfa")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using PROCOMER.VUI.Conexion;
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -7,11 +6,15 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
+
 
 namespace TokenServices
 {
     public class cls_Token
-    {
+    {         
+
+
         #region  tareas
 
         public async Task<Boolean> m_ValidarToken(string pm_Ambiente, string pm_Token)
@@ -131,7 +134,7 @@ namespace TokenServices
                 try
                 {
                     SqlCommand command = new SqlCommand();
-                    cls_Conexion objConexion = new cls_Conexion();
+                    cls_ConexionToken objConexion = new cls_ConexionToken();
                     SqlDataReader dr = null;
                     command.CommandType = CommandType.StoredProcedure;
                     command.CommandText = "SP_Verificar";
@@ -211,7 +214,46 @@ namespace TokenServices
                 public string IdInstitucion { get; set; }
                 public string NombreServicio { get; set; }
             }
+
+        public class cls_ConexionToken
+        {
+            private string connectionString;
+            private SqlConnection conexion;
+
+            public cls_ConexionToken()
+            {
+                this.connectionString = ConfigurationManager.ConnectionStrings["ConexionValidar"].ConnectionString;
+                conexion = new SqlConnection(connectionString);
+            }
+
+            public SqlConnection m_ObtenerConexionAmbiente(string pm_Ambiente = null)
+            {
+                try
+                {
+                    if (conexion.State == System.Data.ConnectionState.Open)
+                    {
+                        conexion.Close();
+                    }
+                    else
+                    {
+                        conexion.Open();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle the exception, log, or rethrow if needed.
+                    return null;
+                }
+
+                return conexion;
+            }
+
+            // Note: The second m_ObtenerConexionAmbiente method is essentially the same as the first.
+            // You may consider removing one of them unless you have a specific reason for having both.
+
+        }
         #endregion
 
     }
+
 }

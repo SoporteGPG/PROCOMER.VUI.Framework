@@ -2,14 +2,14 @@
 using System.Configuration;
 using System.Data.SqlClient;
 
-namespace PROCOMER.VUI.Connection
+namespace PROCOMER.VUI.Conection
 {
-    public class cls_Conexion
+    public class cls_Conection
     {
         private string connectionString;
         private SqlConnection conexion;
 
-        public cls_Conexion()
+        public cls_Conection()
         {
             this.connectionString = ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString;
             conexion = new SqlConnection(connectionString);
@@ -36,9 +36,6 @@ namespace PROCOMER.VUI.Connection
 
             return conexion;
         }
-
-        // Note: The second m_ObtenerConexionAmbiente method is essentially the same as the first.
-        // You may consider removing one of them unless you have a specific reason for having both.
 
     }
 }

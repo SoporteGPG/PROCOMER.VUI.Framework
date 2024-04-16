@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROCOMER.VUI.Conexion", "PR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROCOMER.VUI.Token", "TokenServices\PROCOMER.VUI.Token.csproj", "{59A9CE7A-3620-4C12-8FEC-ACBA3922F4A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROCOMER.VUI.Conection", "PROCOMER.VUI.Conection\PROCOMER.VUI.Conection.csproj", "{82F530DF-4E37-4DAD-96FC-E1FD239D6DFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{59A9CE7A-3620-4C12-8FEC-ACBA3922F4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59A9CE7A-3620-4C12-8FEC-ACBA3922F4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59A9CE7A-3620-4C12-8FEC-ACBA3922F4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F530DF-4E37-4DAD-96FC-E1FD239D6DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F530DF-4E37-4DAD-96FC-E1FD239D6DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F530DF-4E37-4DAD-96FC-E1FD239D6DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F530DF-4E37-4DAD-96FC-E1FD239D6DFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
